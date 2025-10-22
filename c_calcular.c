@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-// função para calcular a soma de dois inteiros
-int soma(int a, int b){
-    return a + b;
-}
-
+// declaração da função para calcular a soma de dois inteiros
+int soma(int a, int b);
+    
 int main(){
 
     // introduzir dois valores inteiros
@@ -20,5 +18,9 @@ int main(){
 
     return 0;
 
+// definição da função para calcular a soma de dois inteiros
+int soma(int a, int b){
+    return a + b;
+}
 
 }
