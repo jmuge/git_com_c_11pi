@@ -5,6 +5,8 @@ int soma(int a, int b);
 
 // declarar as outras funções subtrair, multiplicar e dividir
 int subtrair(int a, int b);
+int multiplicar(int a, int b);
+float dividir(int a, int b);
 
 int main(){
 
@@ -19,6 +21,8 @@ int main(){
     // chamar as funções para calcular a soma, subtração, multiplicação e divisão
     int resultado_soma = soma(n1, n2);
     int resultado_subtracao = subtrair(n1, n2);
+    int resultado_multiplicacao = multiplicar(n1, n2);
+    float resultado_divisao = dividir(n1, n2);
 
     return 0;
 
@@ -32,5 +36,18 @@ int soma(int a, int b) {
 // definir as outras funções subtrair, multiplicar e dividir
 int subtrair(int a, int b) {
     return a - b;
+}
+
+int multiplicar(int a, int b) {
+    return a * b;
+}
+
+float dividir(int a, int b) {
+    if (b != 0) {
+        return (float)a / b;
+    } else {
+        printf("Erro: Divisão por zero!\n");
+        return 0; // Retorna 0 em caso de divisão por zero
+    }
 }
 
