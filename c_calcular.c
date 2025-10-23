@@ -2,7 +2,10 @@
 
 // declaração da função para calcular a soma de dois inteiros
 int soma(int a, int b);
-    
+
+// declarar as outras funções subtrair, multiplicar e dividir
+int subtrair(int a, int b);
+
 int main(){
 
     // introduzir dois valores inteiros
@@ -15,12 +18,19 @@ int main(){
 
     // chamar as funções para calcular a soma, subtração, multiplicação e divisão
     int resultado_soma = soma(n1, n2);
+    int resultado_subtracao = subtrair(n1, n2);
 
     return 0;
 
+}
+
 // definição da função para calcular a soma de dois inteiros
-int soma(int a, int b){
+int soma(int a, int b) {
     return a + b;
 }
 
+// definir as outras funções subtrair, multiplicar e dividir
+int subtrair(int a, int b) {
+    return a - b;
 }
+
