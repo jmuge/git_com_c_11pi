@@ -8,6 +8,10 @@ int subtrair(int a, int b);
 int multiplicar(int a, int b);
 float dividir(int a, int b);
 
+// função para imprimir resultados
+void imprimir_resultados(int soma, int subtracao, int multiplicacao, float divisao);
+
+
 int main(){
 
     // introduzir dois valores inteiros
@@ -24,6 +28,7 @@ int main(){
     int resultado_multiplicacao = multiplicar(n1, n2);
     float resultado_divisao = dividir(n1, n2);
 
+    imprimir_resultados(resultado_soma, resultado_subtracao, resultado_multiplicacao, resultado_divisao);
     return 0;
 
 }
@@ -51,3 +56,9 @@ float dividir(int a, int b) {
     }
 }
 
+void imprimir_resultados(int soma, int subtracao, int multiplicacao, float divisao) {
+    printf("Soma: %d\n", soma);
+    printf("Subtração: %d\n", subtracao);
+    printf("Multiplicação: %d\n", multiplicacao);
+    printf("Divisão: %.2f\n", divisao);
+}
