@@ -28,6 +28,7 @@ int main(){
     int resultado_multiplicacao = multiplicar(n1, n2);
     float resultado_divisao = dividir(n1, n2);
 
+    // chamar a função para imprimir
     imprimir_resultados(resultado_soma, resultado_subtracao, resultado_multiplicacao, resultado_divisao);
     return 0;
 
